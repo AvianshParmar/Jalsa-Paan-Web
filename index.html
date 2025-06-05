@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jalsa Paan - Coming Soon</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Your Custom CSS -->
+  <link href="css/index.css" rel="stylesheet"/>
+
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    .head-img {
+      width: 100%;
+      height: auto;
+    }
+    .bg-img{
+     /* /d-size: cover; */
+      
+    }
+    .normal-font{
+      font-weight: lighter;
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body class="text-green-900 flex flex-col min-h-screen font-sans bg-img">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <img src="image/header.jpg" alt="Jalsa Paan" class="head-img">
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center align-items-center text-center px-4">
+    <div class="">
+      <h2 class="text-5xl font-extrabold mb-4 opacity-0 fade-in-up text-green-800">Something Delicious is Coming Soon! 🍃</h2>
+      <p class="text-lg opacity-0 fade-in-up" style="animation-delay: 1.2s;">We're getting ready to serve you the best paan experience in the UK. Stay tuned!</p>
+      <p class="text-lg opacity-0 fade-in-up" style="animation-delay: 2s;">We also accept live paan orders!</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-3 mt-1">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-center">
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">📍 Address</h3>
+          <p>454C Alexandra Avenue Harrow, Middlesex HA2 9TL</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">📞 Contact</h3>
+          <p><i class="fas fa-mobile-alt mr-1"></i><a href="tel:07454781461" class=" hover:text-green-300"> 07454 781461  </a><i class="fas fa-phone mr-1 ml-1"></i><a href="tel:07454781461" class=" hover:text-green-300"> 020 3875 5444</a></p>
+          <!-- <p><a href="tel:02038755444" class="underline hover:text-green-300"></a></p> -->
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+          <div class="flex justify-center md:justify-center gap-4 text-lg">
+            <a href="https://www.instagram.com/jalsa.paan" target="_blank" class="hover:text-pink-300 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/19AZrU4PWL/?mibextid=wwXIfr" target="_blank" class="hover:text-blue-300 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/4407454781461" target="_blank" class="hover:text-green-300 transition">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2 text-center text-sm text-gray-200">
+        &copy; 2025 Jalsa Paan | All rights reserved
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
